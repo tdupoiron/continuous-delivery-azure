@@ -82,11 +82,11 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      # - uses: azure/docker-login@v1
-      #   with:
-      #     login-server: ${{env.IMAGE_REGISTRY_URL}}
-      #     username: ${{ github.actor }}
-      #     password: ${{ secrets.GITHUB_TOKEN }}
+      - uses: azure/docker-login@v1
+        with:
+          login-server: ${{env.IMAGE_REGISTRY_URL}}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       # - name: Deploy web app container
       #   uses: azure/webapps-deploy@v2
