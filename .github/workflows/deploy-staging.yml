@@ -9,8 +9,8 @@ env:
   ###############################################
   ### Replace <username> with GitHub username ###
   ###############################################
-  DOCKER_IMAGE_NAME: tdupoiron-azure-ttt
-  AZURE_WEBAPP_NAME: tdupoiron-ttt-app
+  DOCKER_IMAGE_NAME: tdupoiron-azure
+  AZURE_WEBAPP_NAME: "GitHub Actions"
   ###############################################
 
 jobs:
