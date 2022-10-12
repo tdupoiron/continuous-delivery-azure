@@ -93,4 +93,3 @@ jobs:
         run: |
           az logout
 
-          
