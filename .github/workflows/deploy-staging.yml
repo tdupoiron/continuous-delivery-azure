@@ -11,4 +11,4 @@ jobs:
     if: contains(github.event.pull_request.labels.*.name, 'stage')
 
     - name: Test
-      run: echo "Test"
+      run: echo "Test from branch"
