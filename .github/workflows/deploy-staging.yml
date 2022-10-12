@@ -5,10 +5,12 @@ on:
     types: [labeled]
 
 jobs:
+
   build:
     runs-on: ubuntu-latest
 
-    if: contains(github.event.pull_request.labels.*.name, 'stage')
-
-    - name: Test
-      run: echo "Test from branch"
+    steps:
+    
+      - name: Test
+        if: contains(github.event.pull_request.labels.*.name, 'stage')
+        run: echo "Test from branch"
