@@ -99,4 +99,4 @@ jobs:
         run: |
           az logout
 
-# That works !! azure config
+# That works  from staging
