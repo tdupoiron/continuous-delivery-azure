@@ -99,4 +99,4 @@ jobs:
         run: |
           az logout
 
-# That works !!
+# That works !! azure config
